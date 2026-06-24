@@ -1,0 +1,105 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-hero {
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid var(--gray-d);
+  border-bottom: 1px solid var(--gray-d);
+  &__slider-wrapper {
+    @include flex-between;
+    position: relative;
+    gap: 30px;
+
+    .slider-arrow {
+      position: relative;
+      z-index: 2;
+      @include laptop-min {
+        display: none;
+      }
+    }
+  }
+  &__slider {
+    width: calc(100% - 300px);
+    overflow: visible !important;
+    @include laptop {
+      width: calc(100% - 200px);
+    }
+    @include laptop-min {
+      width: 100%;
+    }
+  }
+  &__slide {
+    box-sizing: border-box;
+    height: auto !important;
+    min-height: 450px;
+    padding: 90px 0px;
+    color: var(--dark);
+    opacity: 0;
+    z-index: 1;
+
+    transition: opacity 0.3s ease;
+    &.swiper-slide-active {
+      opacity: 1;
+    }
+
+    @include laptop-min {
+      padding: 60px 0px;
+      min-height: 380px;
+    }
+    @include tablet {
+      padding: 50px 0px;
+      min-height: 320px;
+    }
+  }
+  &__slide-info {
+    max-width: 615px;
+    @include laptop-middle {
+      max-width: 540px;
+    }
+    @include laptop-min {
+      max-width: 450px;
+    }
+  }
+  &__slide-title {
+  }
+  &__slide-text {
+    font-size: 36px;
+    margin-top: 10px;
+    @include laptop {
+      font-size: 30px;
+    }
+    @include laptop-middle {
+      font-size: 26px;
+    }
+    @include laptop-min {
+      font-size: 22px;
+    }
+    @include tablet {
+      font-size: 20px;
+    }
+  }
+  &__slide-btn {
+    margin-top: 35px;
+  }
+  &__slide-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(36%);
+    z-index: -1;
+    @include tablet-min {
+      height: 100%;
+      width: auto;
+      max-width: none;
+      opacity: 0.5;
+    }
+  }
+  .slider-pagination {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+    z-index: 1;
+  }
+}

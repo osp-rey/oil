@@ -1,0 +1,108 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.s-calc {
+  &__wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 30px;
+    @include laptop-min {
+      flex-wrap: wrap;
+    }
+  }
+  &__info {
+    flex: 0 1 565px;
+    @include laptop-min {
+      flex: auto;
+      width: 100%;
+    }
+  }
+  &__title {
+  }
+  &__content {
+    margin-top: 20px;
+  }
+  &__widget-calc {
+    flex: 0 1 680px;
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.3);
+    @include laptop {
+      padding: 30px;
+    }
+    @include laptop-min {
+      flex: auto;
+      width: 100%;
+    }
+    @include tablet {
+      padding: 20px;
+    }
+  }
+  &__widget-nav {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+  &__widget-nav-item {
+    flex: 1 1 calc(25% - 12px);
+    padding-bottom: 3px;
+    border-bottom: 2px solid var(--dark);
+
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    transition: border-color 0.3s ease;
+
+    &._active {
+      border-color: var(--primary);
+    }
+    @include tablet-min {
+      font-size: 13px;
+    }
+  }
+  &__widget-window {
+    opacity: 0;
+    display: none;
+
+    transition: opacity 0.3s ease;
+
+    &._active {
+      display: block;
+    }
+    &._show {
+      opacity: 1;
+    }
+  }
+  &__widget-window-title {
+    font-family: "Medium", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--dark);
+    margin: 0px 0px 30px 0px;
+  }
+  &__widget-control {
+    .input-name {
+      margin-bottom: 15px;
+    }
+  }
+  &__widget-bottom {
+    @include flex-between;
+    gap: 25px;
+    margin-top: 20px;
+  }
+  &__widget-next {
+    margin-left: auto;
+    width: 150px;
+    max-width: 100%;
+  }
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    .btn-s[type="submit"] {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.m-title {
+  font-family: "Medium", sans-serif;
+  font-size: 36px;
+  line-height: 139%;
+  color: var(--dark);
+  margin: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  @include laptop {
+    font-size: 32px;
+  }
+  @include laptop-middle {
+    font-size: 28px;
+  }
+  @include laptop-min {
+    font-size: 26px;
+  }
+  @include tablet {
+    font-size: 24px;
+  }
+}
+
+.s-title {
+  font-family: "Medium", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 179%;
+  color: var(--dark);
+  font-weight: 500;
+  margin: 0;
+
+  @include laptop-middle {
+    font-size: 24px;
+  }
+  @include tablet {
+    font-size: 20px;
+  }
+
+  span {
+    color: var(--primary);
+  }
+}

@@ -1,0 +1,127 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.header {
+  background-color: var(--ghost);
+  padding: 14px 0px;
+  color: var(--dark);
+  @include tablet {
+    padding: 10px 0px;
+  }
+
+  &__wrapper {
+    @include flex-between;
+    gap: 30px;
+  }
+  &__burger-btn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    width: 30px;
+    height: 30px;
+    @media (min-width: 992px) {
+      display: none;
+    }
+
+    div {
+      width: 100%;
+      height: 3px;
+      background-color: currentColor;
+    }
+  }
+  &__logo {
+    display: block;
+    width: 185px;
+    @include laptop {
+      width: 160px;
+    }
+    @include laptop-min {
+      width: 140px;
+    }
+    @include tablet-min {
+      width: 110px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  &__nav {
+    @include laptop-min {
+      position: absolute;
+      left: -9999px;
+      z-index: -9999;
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 35px;
+    @include laptop {
+      gap: 20px;
+    }
+
+    a {
+      position: relative;
+      transition: color .3s ease;
+
+      @include hover {
+        color: var(--primary);
+      }
+    }
+  }
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    @include laptop-min {
+      gap: 30px;
+    }
+  }
+  &__mob-tel {
+    @include flex-center;
+    width: 24px;
+    height: 24px;
+    color: var(--primary);
+    @media (min-width: 992px) {
+      display: none;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__btn {
+    width: 230px;
+    @include laptop {
+      width: fit-content;
+    }
+    @include laptop-middle {
+      display: none;
+    }
+  }
+  &__contacts-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: var(--gray);
+    text-align: end;
+    flex-shrink: 0;
+    @include laptop-min {
+      display: none;
+    }
+  }
+  &__tel {
+    font-size: 24px;
+    font-weight: 700;
+    transition: color .3s ease;
+    @include hover {
+      color: var(--primary);
+    }
+  }
+  &__address {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,26 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.sect-p {
+  padding: 60px 0px;
+
+  &.bg-ghost + .sect-p.bg-ghost {
+    padding-top: 0 !important;
+  }
+}
+
+.bg-ghost {
+  background-color: var(--ghost);
+}
+
+.sect-head {
+  @include flex-between;
+  gap: 30px;
+  margin-bottom: 30px;
+
+  .slider-arrows {
+    @include tablet-min {
+      display: none;
+    }
+  }
+}
