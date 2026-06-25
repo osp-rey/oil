@@ -1,5 +1,5 @@
-@use '../base/templates' as *;
-@use '../base/media' as *;
+@use "../base/templates" as *;
+@use "../base/media" as *;
 
 .fancybox__backdrop {
   background-color: rgba(0, 0, 0, 0.5);
@@ -26,7 +26,7 @@
     top: 20px;
     right: 30px;
 
-    transition: color .3s ease;
+    transition: color 0.3s ease;
     @include hover {
       color: var(--primary);
     }
@@ -51,7 +51,6 @@
   &__content {
     text-align: center;
     margin: 20px 0px 0px 0px;
-
   }
   &__form {
     margin-top: 30px;
@@ -61,6 +60,111 @@
 
     .btn-s[type="submit"] {
       width: 100%;
+    }
+  }
+}
+
+.modal-b {
+  padding: 60px 50px;
+  width: 800px;
+  max-width: 100%;
+  color: white;
+  display: none;
+  cursor: auto;
+  z-index: 1;
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    z-index: -1;
+  }
+  &::before {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  &::after {
+    background: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+  }
+  @include laptop-min {
+    padding: 50px 30px 30px 30px;
+  }
+  @include tablet {
+    padding: 50px 20px 20px 20px;
+  }
+
+  &__close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+
+    transition: color .3s ease;
+    @include hover {
+      color: var(--primary);
+    }
+    @include laptop-min {
+      top: 20px;
+      right: 30px;
+    }
+
+    @include tablet {
+      width: 24px;
+      height: 24px;
+      right: 20px;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__body {
+    width: 100%;
+    height: 100%;
+  }
+  &__title {
+    color: inherit;
+    max-width: 565px;
+
+    ._brand {
+      color: inherit;
+    }
+  }
+  &__form {
+    max-width: 565px;
+    margin-top: 80px;
+    @include tablet {
+      margin-top: 60px;
+    }
+    @include tablet-min {
+      margin-top: 40px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+
+      .input-control {
+        @include tablet-min {
+          grid-column: 2 span;
+        }
+      }
+    }
+    .form-nav {
+      grid-column: 2 span;
+      .btn-s {
+        width: 100%;
+      }
+      .check-wrapper {
+        margin-top: 20px;
+      }
     }
   }
 }

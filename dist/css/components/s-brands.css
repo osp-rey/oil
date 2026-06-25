@@ -1,0 +1,139 @@
+.s-brands {
+  position: relative;
+  color: white;
+  z-index: 1;
+}
+
+.s-brands::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: var(--dark);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.s-brands__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.s-brands__title {
+  color: inherit;
+  max-width: 710px;
+}
+
+.s-brands__grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.s-brands__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 20px 20px 20px;
+  background-color: white;
+  border: 1px solid var(--gray-d);
+  height: 100%;
+  font-size: 15px;
+  line-height: 145%;
+  text-align: center;
+  user-select: none;
+  color: black;
+  transition: opacity 0.3s ease;
+}
+
+.s-brands__item .gallery-rect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+}
+
+.s-brands__more-btn {
+  margin: 25px auto 0px auto;
+}
+
+@media (min-width: 1366px) {
+  .s-brands__grid [data-more-item]:nth-child(-n+12) {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1365px) {
+  .s-brands__grid {
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .s-brands__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 991px) {
+  .s-brands__grid {
+    margin-top: 30px;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .s-brands__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .s-brands__grid [data-more-item]:nth-child(-n+6) {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 575px) {
+  .s-brands__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .s-brands__more-btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1365px) {
+  .s-brands__grid [data-more-item]:nth-child(-n+10) {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .s-brands__grid [data-more-item]:nth-child(-n+8) {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (any-hover: hover) {
+  .s-brands__item:hover {
+    opacity: 0.8;
+  }
+}
+
+@media (hover: none) {
+  .s-brands__item:active {
+    opacity: 0.8;
+  }
+}

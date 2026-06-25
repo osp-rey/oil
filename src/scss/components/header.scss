@@ -1,12 +1,21 @@
-@use '../base/templates' as *;
-@use '../base/media' as *;
+@use "../base/templates" as *;
+@use "../base/media" as *;
 
 .header {
+  position: sticky;
+  top: 0;
   background-color: var(--ghost);
   padding: 14px 0px;
   color: var(--dark);
+  z-index: 100;
+
+  transition: transform 0.3s ease;
   @include tablet {
     padding: 10px 0px;
+  }
+
+  &._scroll {
+    transform: translateY(-100%);
   }
 
   &__wrapper {
@@ -64,7 +73,7 @@
 
     a {
       position: relative;
-      transition: color .3s ease;
+      transition: color 0.3s ease;
 
       @include hover {
         color: var(--primary);
@@ -116,7 +125,7 @@
   &__tel {
     font-size: 24px;
     font-weight: 700;
-    transition: color .3s ease;
+    transition: color 0.3s ease;
     @include hover {
       color: var(--primary);
     }

@@ -1,0 +1,55 @@
+.m-title {
+  font-family: "Medium", sans-serif;
+  font-size: 36px;
+  line-height: 139%;
+  color: var(--dark);
+  margin: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.s-title {
+  font-family: "Medium", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 179%;
+  color: var(--dark);
+  font-weight: 500;
+  margin: 0;
+}
+
+.s-title span {
+  color: var(--primary);
+}
+
+@media (max-width: 1365px) {
+  .m-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .m-title {
+    font-size: 28px;
+  }
+
+  .s-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 991px) {
+  .m-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 767px) {
+  .m-title {
+    font-size: 24px;
+  }
+
+  .s-title {
+    font-size: 20px;
+  }
+}

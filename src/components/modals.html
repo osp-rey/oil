@@ -2,7 +2,7 @@
   <div class="modal" id="modal-feedback">
     <div data-fancybox-close class="modal__close">
       <svg>
-        <use xlink:href='img/icons/icons.svg#icon-close'></use>
+        <use xlink:href="img/icons/icons.svg#icon-close"></use>
       </svg>
     </div>
     <div class="modal__body">
@@ -44,6 +44,62 @@
               </span>
             </span>
           </span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-b" id="modal-offer" style="background: url('@img/modal-offer.jpg') center / cover no-repeat;">
+    <div data-fancybox-close class="modal-b__close">
+      <svg>
+        <use xlink:href='img/icons/icons.svg#icon-close'></use>
+      </svg>
+    </div>
+    <div class="modal-b__body">
+      <div class="s-title modal-b__title">
+        замените масло в
+        <span class="_brand">(марка авто)</span>
+        за
+        <span class="_price">(стоимость)</span>
+      </div>
+      <form action="#" class="modal-b__form">
+        <div style="display: none">
+          <textarea class="input-note"></textarea>
+        </div>
+        <div class="form-grid">
+          <div class="input-control">
+            <input type="text" placeholder="Ваше имя" class="input _white" />
+          </div>
+          <div class="input-control">
+            <input type="tel" placeholder="Ваш телефон" class="input _white" />
+          </div>
+          <div class="form-nav">
+            <button type="submit" class="btn-s">Оставить заявку</button>
+            <div class="check-wrapper _white">
+              <span class="wpcf7-form-control-wrap" data-name="acceptance-278">
+                <span class="wpcf7-form-control wpcf7-acceptance">
+                  <span class="wpcf7-list-item">
+                    <label>
+                      <input
+                        type="checkbox"
+                        name="acceptance-278"
+                        value="1"
+                        aria-invalid="false"
+                      />
+                      <span class="wpcf7-list-item-label">
+                        <span>
+                          Я даю согласие на
+                          <a href="/privacy-policy" target="_blank">
+                            обработку персональных данных
+                          </a>
+                        </span>
+                      </span>
+                    </label>
+                  </span>
+                </span>
+              </span>
+            </div>
+          </div>
         </div>
       </form>
     </div>

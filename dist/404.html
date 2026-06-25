@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./files/favicon.svg">
+  <link rel="stylesheet" href="./files/swiper/swiper.min.css">
+  <link rel="stylesheet" href="./files/fancybox/fancybox.min.css">
+  <link rel="stylesheet" href="./css/main.css?ver=mqtejbtb">
+  <title>OSPREY</title>
+  <body class="body error404">
+    <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__burger-btn" id="burger-open">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <a href="/" class="header__logo">
+        <img src="img/logo.svg" alt="image" />
+      </a>
+      <nav class="header__nav">
+        <ul class="list header__list">
+          <li><a href="#s-products">Виды масла</a></li>
+          <li><a href="#s-prices">Прайс-лист</a></li>
+          <li><a href="#s-calc">Калькулятор</a></li>
+          <li><a href="#s-faq">FAQ</a></li>
+          <li><a href="#s-contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header__contacts">
+        <a href="tel:+79999999999" class="header__mob-tel">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#icon-tel"></use>
+          </svg>
+        </a>
+        <a href="#modal-feedback" data-fancybox class="btn-s header__btn">
+          Записаться онлайн
+        </a>
+        <div class="header__contacts-info">
+          <a href="tel:+79999999999" class="header__tel">+7 (999) 999-99-99</a>
+          <div class="header__address">г. Казань, ул. Космонавтов, 46Б</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <aside>
+  <div class="burger-overlay" id="burger-overlay"></div>
+  <div class="burger" id="burger">
+    <div class="burger__head">
+      <a href="/" class="burger__logo">
+        <img src="img/logo.svg" alt="image" />
+      </a>
+      <div class="burger__close" id="burger-close">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#icon-close"></use>
+        </svg>
+      </div>
+    </div>
+    <ul class="list burger__list">
+      <li><a href="#s-products">Виды масла</a></li>
+      <li><a href="#s-prices">Прайс-лист</a></li>
+      <li><a href="#s-calc">Калькулятор</a></li>
+      <li><a href="#s-faq">FAQ</a></li>
+      <li><a href="#s-contacts">Контакты</a></li>
+    </ul>
+    <div class="burger__contacts">
+      <a href="#modal-feedback" data-fancybox class="btn-s burger__btn">
+        Записаться онлайн
+      </a>
+      <div class="burger__contacts-info">
+        <a href="tel:+79999999999" class="burger__tel">+7 (999) 999-99-99</a>
+        <div class="burger__address">г. Казань, ул. Космонавтов, 46Б</div>
+      </div>
+    </div>
+  </div>
+</aside>
+
+    <aside>
+  <div class="modal" id="modal-feedback">
+    <div data-fancybox-close class="modal__close">
+      <svg>
+        <use xlink:href="img/icons/icons.svg#icon-close"></use>
+      </svg>
+    </div>
+    <div class="modal__body">
+      <div class="modal__title s-title">Связаться с нами</div>
+      <p class="modal__content">
+        Оставьте заявку и мы свяжемся с Вами в ближайшее время
+      </p>
+      <form action="#" class="modal__form">
+        <div style="display: none">
+          <input type="text" class="input-note" />
+        </div>
+        <div class="input-control">
+          <input type="text" placeholder="Ваше имя" class="input" />
+        </div>
+        <div class="input-control">
+          <input type="tel" placeholder="Ваш телефон" class="input" />
+        </div>
+        <button type="submit" class="btn-s">Оставить заявку</button>
+        <div class="check-wrapper">
+          <span class="wpcf7-form-control-wrap" data-name="acceptance-278">
+            <span class="wpcf7-form-control wpcf7-acceptance">
+              <span class="wpcf7-list-item">
+                <label>
+                  <input
+                    type="checkbox"
+                    name="acceptance-278"
+                    value="1"
+                    aria-invalid="false"
+                  />
+                  <span class="wpcf7-list-item-label">
+                    <span>
+                      Я даю согласие на
+                      <a href="/privacy-policy" target="_blank">
+                        обработку персональных данных
+                      </a>
+                    </span>
+                  </span>
+                </label>
+              </span>
+            </span>
+          </span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-b" id="modal-offer" style="background: url('img/modal-offer.jpg') center / cover no-repeat;">
+    <div data-fancybox-close class="modal-b__close">
+      <svg>
+        <use xlink:href='img/icons/icons.svg#icon-close'></use>
+      </svg>
+    </div>
+    <div class="modal-b__body">
+      <div class="s-title modal-b__title">
+        замените масло в
+        <span class="_brand">(марка авто)</span>
+        за
+        <span class="_price">(стоимость)</span>
+      </div>
+      <form action="#" class="modal-b__form">
+        <div style="display: none">
+          <textarea class="input-note"></textarea>
+        </div>
+        <div class="form-grid">
+          <div class="input-control">
+            <input type="text" placeholder="Ваше имя" class="input _white" />
+          </div>
+          <div class="input-control">
+            <input type="tel" placeholder="Ваш телефон" class="input _white" />
+          </div>
+          <div class="form-nav">
+            <button type="submit" class="btn-s">Оставить заявку</button>
+            <div class="check-wrapper _white">
+              <span class="wpcf7-form-control-wrap" data-name="acceptance-278">
+                <span class="wpcf7-form-control wpcf7-acceptance">
+                  <span class="wpcf7-list-item">
+                    <label>
+                      <input
+                        type="checkbox"
+                        name="acceptance-278"
+                        value="1"
+                        aria-invalid="false"
+                      />
+                      <span class="wpcf7-list-item-label">
+                        <span>
+                          Я даю согласие на
+                          <a href="/privacy-policy" target="_blank">
+                            обработку персональных данных
+                          </a>
+                        </span>
+                      </span>
+                    </label>
+                  </span>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</aside>
+
+    <main>
+
+      <section class="s-notfound sect-m">
+        <div class="container">
+          <div class="s-notfound__num">404</div>
+          <div class="s-notfound__descr content">
+            Страницы по Вашему запросу не существует.
+          </div>
+          <a href="/" class="btn-s s-notfound__btn">На главную</a>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <a href="/" class="footer__logo">
+        <img src="img/logo.svg" alt="logo" />
+      </a>
+      <div class="footer__nav">
+        <div class="nav-title">Навигация</div>
+        <ul class="list footer__nav-list">
+          <li><a href="#s-products">Виды масла</a></li>
+          <li><a href="#s-prices">Прайс-лист</a></li>
+          <li><a href="#s-calc">Калькулятор</a></li>
+          <li><a href="#s-faq">FAQ</a></li>
+          <li><a href="#s-contacts">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__contacts">
+        <a href="tel:+79999999999" class="footer__tel">+7 (999) 999‒99‒99</a>
+        <div class="footer__address">г. Казань, ул. Космонавтов, 46Б</div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__copyright">
+        © 2025 ”Центр масла”, ИНН: 123123123123, ОГРН: 123123123123123
+      </div>
+      <ul class="list footer__bottom-list">
+        <li>
+          <a href="#" target="_blank">Правила обработки персональных данных</a>
+        </li>
+        <li><a href="#" target="_blank">Политика конфиденциальности</a></li>
+        <li>
+          <a href="https://qorix.ru/" target="_blank">
+            <span>Разработка сайта —</span>
+            <img src="img/qroix.svg" alt="qorix" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="./files/swiper/swiper.min.js"></script>
+<script src="./files/fancybox/fancybox.min.js"></script>
+<script src="./files/inputmask/inputmask.min.js"></script>
+
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

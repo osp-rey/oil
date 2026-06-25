@@ -1,0 +1,70 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-faq {
+  &__grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: start;
+    @include laptop-min {
+      gap: 20px;
+    }
+    @include tablet {
+      flex-wrap: wrap;
+    }
+  }
+  &__col {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    flex: 0 1 615px;
+    @include tablet {
+      width: 100%;
+      flex: auto
+    }
+  }
+  &__spoller {
+  }
+  &__spoller-btn {
+    @include flex-between;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 12px 25px;
+    gap: 15px;
+    background-color: white;
+    border: 1px solid var(--gray-d);
+    user-select: none;
+
+    transition: background-color .3s ease;
+
+    @include laptop-min {
+      font-size: 16px;
+      padding: 12px 20px;
+    }
+
+    &._spoller-active {
+      background-color: transparent;
+      .arrow {
+        transform: rotate(180deg);
+      }
+    }
+
+    .arrow {
+      width: 14px;
+      height: 14px;
+      color: var(--primary);
+      flex-shrink: 0;
+
+      transition: transform .3s ease;
+    }
+  }
+  &__spoller-body {
+    padding: 25px;
+    background-color: white;
+    border: 1px solid var(--gray-d);
+    @include laptop-min {
+      padding: 20px;
+    }
+  }
+}

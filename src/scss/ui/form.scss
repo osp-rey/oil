@@ -32,6 +32,11 @@
     background-color: var(--background-h);
   }
 
+  &._white {
+    --background: white;
+    --background-h: white;
+  }
+
   &.wpcf7-not-valid,
   &._not-valid {
     --border: var(--red);
@@ -41,6 +46,7 @@
 
 .check-wrapper {
   position: relative;
+  width: fit-content;
 
   --url: url("@img/check-primary.svg");
   --border: var(--gray-d);
@@ -48,6 +54,13 @@
   --background: transparent;
   --background-h: transparent;
   --color: var(--dark);
+
+  &._white {
+    --color: white;
+    --url: url("@img/check-white.svg");
+    --border: white;
+    --border-h: white;
+  }
 
   input[type="checkbox"] {
     position: absolute;

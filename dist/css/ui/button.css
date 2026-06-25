@@ -1,0 +1,52 @@
+.btn-s {
+  --background: var(--primary);
+  --border: var(--primary);
+  --color: white;
+  --background-h: var(--primary-dark);
+  --border-h: var(--primary-dark);
+  --color-h: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 25px;
+  cursor: pointer;
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  width: fit-content;
+  gap: 10px;
+  text-align: center;
+  color: var(--color);
+  font-weight: 700;
+  user-select: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-s .arrow {
+  width: 14px;
+  height: 14px;
+}
+
+.btn-s._white {
+  --background: white;
+  --border: white;
+  --color: black;
+  --background-h: var(--ghost-l);
+  --border-h: var(--ghost-l);
+  --color-h: black;
+}
+
+@media (any-hover: hover) {
+  .btn-s:hover {
+    color: var(--color-h);
+    background-color: var(--background-h);
+    border-color: var(--border-h);
+  }
+}
+
+@media (hover: none) {
+  .btn-s:active {
+    color: var(--color-h);
+    background-color: var(--background-h);
+    border-color: var(--border-h);
+  }
+}

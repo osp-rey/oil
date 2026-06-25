@@ -1,0 +1,40 @@
+.content-box > * {
+  margin: 0;
+}
+
+.content-box > *:not(:last-child) {
+  margin-bottom: 1.3em;
+}
+
+.content-box ul {
+  padding-left: 25px;
+}
+
+.b-text {
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+@media (max-width: 1365px) {
+  .b-text {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .b-text {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 991px) {
+  .b-text {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .b-text {
+    font-size: 20px;
+  }
+}

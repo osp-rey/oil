@@ -1,0 +1,52 @@
+.s-prices__table {
+  background-color: white;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  display: block;
+}
+
+.s-prices__table thead {
+  display: block;
+  width: 100%;
+  color: white;
+  background-color: var(--primary);
+}
+
+.s-prices__table tbody {
+  display: block;
+  width: 100%;
+}
+
+.s-prices__table tr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 35px;
+  width: 100%;
+  border-top: 1px solid var(--gray-d);
+}
+
+.s-prices__table th,
+.s-prices__table td {
+  font-weight: 400;
+  text-align: start;
+  font-size: 18px;
+  line-height: 113%;
+  display: block;
+}
+
+.s-prices__table th:last-child,
+.s-prices__table td:last-child {
+  flex-shrink: 0;
+}
+
+@media (max-width: 767px) {
+  .s-prices__table tr {
+    padding: 16px 20px;
+  }
+
+  .s-prices__table th,
+  .s-prices__table td {
+    font-size: 16px;
+  }
+}

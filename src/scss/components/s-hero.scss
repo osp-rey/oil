@@ -64,20 +64,7 @@
   &__slide-title {
   }
   &__slide-text {
-    font-size: 36px;
     margin-top: 10px;
-    @include laptop {
-      font-size: 30px;
-    }
-    @include laptop-middle {
-      font-size: 26px;
-    }
-    @include laptop-min {
-      font-size: 22px;
-    }
-    @include tablet {
-      font-size: 20px;
-    }
   }
   &__slide-btn {
     margin-top: 35px;

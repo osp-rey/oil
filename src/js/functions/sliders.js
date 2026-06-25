@@ -35,7 +35,7 @@ export default function sliders() {
       },
       scrollbar: {
         el: ".s-products .slider-scrollbar",
-        draggable: true
+        draggable: true,
       },
       breakpoints: {
         1366: {
@@ -49,6 +49,33 @@ export default function sliders() {
         768: {
           spaceBetween: 20,
           slidesPerView: 3,
+        },
+      },
+    });
+  }
+
+  const gallerySlider = document.querySelector(".s-gallery__slider");
+
+  if (gallerySlider) {
+    const swiper = new Swiper(gallerySlider, {
+      speed: 900,
+      spaceBetween: 20,
+      slidesPerView: "auto",
+      // autoplay: {
+      //   delay: 6000,
+      // },
+      navigation: {
+        prevEl: ".s-gallery .slider-arrow._prev",
+        nextEl: ".s-gallery .slider-arrow._next",
+      },
+      scrollbar: {
+        el: ".s-gallery .slider-scrollbar",
+        draggable: true,
+      },
+      breakpoints: {
+        1200: {
+          spaceBetween: 25,
+          slidesPerView: "auto",
         },
       },
     });

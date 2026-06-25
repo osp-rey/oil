@@ -1,0 +1,25 @@
+.sect-p {
+  padding: 60px 0px;
+}
+
+.sect-p.bg-ghost + .sect-p.bg-ghost {
+  padding-top: 0 !important;
+}
+
+.bg-ghost {
+  background-color: var(--ghost);
+}
+
+.sect-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 575px) {
+  .sect-head .slider-arrows {
+    display: none;
+  }
+}

@@ -1,0 +1,85 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-connect {
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid var(--gray-d);
+  border-bottom: 1px solid var(--gray-d);
+  z-index: 1;
+  &__decor {
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+
+    @include laptop {
+      display: none;
+    }
+
+    &._left {
+      left: -130px;
+      bottom: -165px;
+    }
+    &._right {
+      top: 50%;
+      transform: translateY(-50%);
+      right: -105px;
+    }
+  }
+  .container {
+    position: relative;
+  }
+  &__img {
+    position: absolute;
+    left: 680px;
+    top: -100px;
+    pointer-events: none;
+    z-index: -2;
+    @include laptop-middle {
+      left: auto;
+      right: -200px;
+    }
+    @include tablet {
+      width: 100%;
+      opacity: 0.5;
+    }
+  }
+  &__info {
+    max-width: 660px;
+    @include laptop-min {
+      max-width: 450px;
+    }
+    @include tablet-min {
+      max-width: none;
+    }
+  }
+  &__title {
+  }
+  &__descr {
+  }
+  &__form {
+    margin-top: 35px;
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+
+      .input-control {
+        @include tablet-min {
+          grid-column: 2 span;
+        }
+      }
+      .form-nav {
+        grid-column: 2 span;
+
+        .btn-s[type="submit"] {
+          width: 100%;
+        }
+        .check-wrapper {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-brands {
+  position: relative;
+  color: white;
+  z-index: 1;
+  &::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: var(--dark);
+    opacity: 0.5;
+    z-index: -1;
+  }
+  &__head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  &__title {
+    color: inherit;
+    max-width: 710px;
+  }
+  &__head-descr {
+  }
+  &__grid {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+
+    @include laptop {
+      grid-template-columns: repeat(5, 1fr);
+      margin-top: 40px;
+    }
+    @include laptop-middle {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @include laptop-min {
+      margin-top: 30px;
+      gap: 16px;
+    }
+    @include tablet {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include tablet-min {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    [data-more-item] {
+      @media (min-width: 1366px) {
+        &:nth-child(-n + 12) {
+          display: block;
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      @media (min-width: 1200px) and (max-width: 1365px) {
+        &:nth-child(-n + 10) {
+          display: block;
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 1199px) {
+        &:nth-child(-n + 8) {
+          display: block;
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      @include tablet {
+        &:nth-child(-n + 6) {
+          display: block;
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 20px 20px 20px;
+    background-color: white;
+    border: 1px solid var(--gray-d);
+    height: 100%;
+
+    font-size: 15px;
+    line-height: 145%;
+    text-align: center;
+    user-select: none;
+    color: black;
+
+    transition: opacity 0.3s ease;
+    @include hover {
+      opacity: 0.8;
+    }
+
+    .gallery-rect {
+      @include flex-center;
+      width: 90px;
+      height: 90px;
+    }
+  }
+  &__more-btn {
+    margin: 25px auto 0px auto;
+    @include tablet-min {
+      width: 100%;
+    }
+  }
+}

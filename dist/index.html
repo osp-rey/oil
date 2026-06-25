@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./files/favicon.svg">
+  <link rel="stylesheet" href="./files/swiper/swiper.min.css">
+  <link rel="stylesheet" href="./files/fancybox/fancybox.min.css">
+  <link rel="stylesheet" href="./css/main.css?ver=mqtejbtb">
+  <title>OSPREY</title>
+</head>
+<body class="body">
+
+  <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__burger-btn" id="burger-open">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <a href="/" class="header__logo">
+        <img src="img/logo.svg" alt="image" />
+      </a>
+      <nav class="header__nav">
+        <ul class="list header__list">
+          <li><a href="#s-products">Виды масла</a></li>
+          <li><a href="#s-prices">Прайс-лист</a></li>
+          <li><a href="#s-calc">Калькулятор</a></li>
+          <li><a href="#s-faq">FAQ</a></li>
+          <li><a href="#s-contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header__contacts">
+        <a href="tel:+79999999999" class="header__mob-tel">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#icon-tel"></use>
+          </svg>
+        </a>
+        <a href="#modal-feedback" data-fancybox class="btn-s header__btn">
+          Записаться онлайн
+        </a>
+        <div class="header__contacts-info">
+          <a href="tel:+79999999999" class="header__tel">+7 (999) 999-99-99</a>
+          <div class="header__address">г. Казань, ул. Космонавтов, 46Б</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <aside>
+  <div class="burger-overlay" id="burger-overlay"></div>
+  <div class="burger" id="burger">
+    <div class="burger__head">
+      <a href="/" class="burger__logo">
+        <img src="img/logo.svg" alt="image" />
+      </a>
+      <div class="burger__close" id="burger-close">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#icon-close"></use>
+        </svg>
+      </div>
+    </div>
+    <ul class="list burger__list">
+      <li><a href="#s-products">Виды масла</a></li>
+      <li><a href="#s-prices">Прайс-лист</a></li>
+      <li><a href="#s-calc">Калькулятор</a></li>
+      <li><a href="#s-faq">FAQ</a></li>
+      <li><a href="#s-contacts">Контакты</a></li>
+    </ul>
+    <div class="burger__contacts">
+      <a href="#modal-feedback" data-fancybox class="btn-s burger__btn">
+        Записаться онлайн
+      </a>
+      <div class="burger__contacts-info">
+        <a href="tel:+79999999999" class="burger__tel">+7 (999) 999-99-99</a>
+        <div class="burger__address">г. Казань, ул. Космонавтов, 46Б</div>
+      </div>
+    </div>
+  </div>
+</aside>
+
+  <aside>
+  <div class="modal" id="modal-feedback">
+    <div data-fancybox-close class="modal__close">
+      <svg>
+        <use xlink:href="img/icons/icons.svg#icon-close"></use>
+      </svg>
+    </div>
+    <div class="modal__body">
+      <div class="modal__title s-title">Связаться с нами</div>
+      <p class="modal__content">
+        Оставьте заявку и мы свяжемся с Вами в ближайшее время
+      </p>
+      <form action="#" class="modal__form">
+        <div style="display: none">
+          <input type="text" class="input-note" />
+        </div>
+        <div class="input-control">
+          <input type="text" placeholder="Ваше имя" class="input" />
+        </div>
+        <div class="input-control">
+          <input type="tel" placeholder="Ваш телефон" class="input" />
+        </div>
+        <button type="submit" class="btn-s">Оставить заявку</button>
+        <div class="check-wrapper">
+          <span class="wpcf7-form-control-wrap" data-name="acceptance-278">
+            <span class="wpcf7-form-control wpcf7-acceptance">
+              <span class="wpcf7-list-item">
+                <label>
+                  <input
+                    type="checkbox"
+                    name="acceptance-278"
+                    value="1"
+                    aria-invalid="false"
+                  />
+                  <span class="wpcf7-list-item-label">
+                    <span>
+                      Я даю согласие на
+                      <a href="/privacy-policy" target="_blank">
+                        обработку персональных данных
+                      </a>
+                    </span>
+                  </span>
+                </label>
+              </span>
+            </span>
+          </span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-b" id="modal-offer" style="background: url('img/modal-offer.jpg') center / cover no-repeat;">
+    <div data-fancybox-close class="modal-b__close">
+      <svg>
+        <use xlink:href='img/icons/icons.svg#icon-close'></use>
+      </svg>
+    </div>
+    <div class="modal-b__body">
+      <div class="s-title modal-b__title">
+        замените масло в
+        <span class="_brand">(марка авто)</span>
+        за
+        <span class="_price">(стоимость)</span>
+      </div>
+      <form action="#" class="modal-b__form">
+        <div style="display: none">
+          <textarea class="input-note"></textarea>
+        </div>
+        <div class="form-grid">
+          <div class="input-control">
+            <input type="text" placeholder="Ваше имя" class="input _white" />
+          </div>
+          <div class="input-control">
+            <input type="tel" placeholder="Ваш телефон" class="input _white" />
+          </div>
+          <div class="form-nav">
+            <button type="submit" class="btn-s">Оставить заявку</button>
+            <div class="check-wrapper _white">
+              <span class="wpcf7-form-control-wrap" data-name="acceptance-278">
+                <span class="wpcf7-form-control wpcf7-acceptance">
+                  <span class="wpcf7-list-item">
+                    <label>
+                      <input
+                        type="checkbox"
+                        name="acceptance-278"
+                        value="1"
+                        aria-invalid="false"
+                      />
+                      <span class="wpcf7-list-item-label">
+                        <span>
+                          Я даю согласие на
+                          <a href="/privacy-policy" target="_blank">
+                            обработку персональных данных
+                          </a>
+                        </span>
+                      </span>
+                    </label>
+                  </span>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</aside>
+
+  
+  <main>
+
+    <section class="s-hero">
+  <div class="container">
+    <div class="s-hero__slider-wrapper">
+      <div class="slider-arrow _prev">
+        <svg>
+          <use xlink:href='img/icons/icons.svg#icon-prev'></use>
+        </svg>
+      </div>
+      <div class="swiper s-hero__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide s-hero__slide">
+            <div class="s-hero__slide-info">
+              <h1 class="s-hero__slide-title m-title">
+                Экспрес замена масла в двигателе
+              </h1>
+              <div class="s-hero__slide-text b-text">в Казани на ул. Космонавтов</div>
+              <a
+                href="#modal-feedback" data-fancybox
+                data-btn-note="Узнать цену"
+                data-target-note="#modal-feedback .input-note"
+                class="btn-s s-hero__slide-btn"
+              >
+                Узнать цену
+              </a>
+            </div>
+            <img src="img/hero.png" alt="image" class="s-hero__slide-img">
+          </div>
+          <div class="swiper-slide s-hero__slide">
+            <div class="s-hero__slide-info">
+              <h1 class="s-hero__slide-title m-title">
+                Экспрес замена масла в двигателе 2
+              </h1>
+              <a
+                href="#modal-feedback" data-fancybox
+                data-btn-note="Узнать цену"
+                data-target-note="#modal-feedback .input-note"
+                class="btn-s s-hero__slide-btn"
+              >
+                Узнать цену
+              </a>
+            </div>
+            <img src="img/hero.png" alt="image" class="s-hero__slide-img">
+          </div>
+          <div class="swiper-slide s-hero__slide">
+            <div class="s-hero__slide-info">
+              <h1 class="s-hero__slide-title m-title">
+                Экспрес замена масла в двигателе
+              </h1>
+              <div class="s-hero__slide-text b-text">в Казани на ул. Космонавтов</div>
+            </div>
+            <img src="img/hero.png" alt="image" class="s-hero__slide-img">
+          </div>
+        </div>
+      </div>
+      <div class="slider-arrow _next">
+        <svg>
+          <use xlink:href='img/icons/icons.svg#icon-next'></use>
+        </svg>
+      </div>
+    </div>
+    <div class="slider-pagination"></div>
+  </div>
+</section>
+
+    <section class="sect-p bg-ghost s-offer" id="s-offer">
+  <div class="container">
+    <div class="s-offer__wrapper">
+      <img src="img/offer.jpg" alt="image" class="s-offer__img" />
+      <div class="s-offer__info">
+        <h2 class="s-title s-offer__title">
+          Заменим масло в двигателе СЕГОДНЯ за <span>30 минут</span>
+        </h2>
+        <div class="content-box s-offer__content">
+          <ul>
+            <li>Заезд в день обращения</li>
+            <li>Самая низкая цена в городе</li>
+            <li>Наличие оригинальных масел под все модели авто</li>
+          </ul>
+        </div>
+        <a href="#modal-feedback" data-fancybox class="btn-s s-offer__btn">Записаться онлайн</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="s-calc sect-p bg-ghost" id="s-calc">
+  <div class="container">
+    <div class="s-calc__wrapper">
+      <div class="s-calc__info">
+        <h2 class="s-title s-calc__title">
+          Расчитать стоимость замены масла
+          <br />
+          за
+          <span>1 минуту</span>
+        </h2>
+        <div class="content-box s-calc__content">
+          <p>
+            Высокий уровень вовлечения представителей целевой аудитории является
+            четким доказательством простого факта: сплочённость команды
+            профессионалов играет определяющее значение для позиций, занимаемых
+            участниками в отношении поставленных задач. С другой стороны,
+            высококачественный прототип будущего проекта обеспечивает
+            актуальность существующих финансовых и административных условий.
+          </p>
+        </div>
+      </div>
+      <div class="s-calc__widget-calc widget-calc" id="widget-calc">
+        <div class="s-calc__widget-nav">
+          <div class="s-calc__widget-nav-item widget-calc-nav-item _active">
+            МАРКА
+          </div>
+          <div class="s-calc__widget-nav-item widget-calc-nav-item">МОДЕЛЬ</div>
+          <div class="s-calc__widget-nav-item widget-calc-nav-item">МАСЛО</div>
+          <div class="s-calc__widget-nav-item widget-calc-nav-item">РАСЧЕТ</div>
+        </div>
+        <div class="s-calc__widget-window widget-calc-window _active _show">
+          <div class="s-calc__widget-window-title">
+            Укажите марку автомобиля
+          </div>
+          <div class="s-calc__widget-control">
+            <div class="input-name">Введите вручную или выберите из списка</div>
+            <div class="select">
+              <div class="select-btn">
+                <input
+                  type="text"
+                  placeholder="Введите марку (например: Mazda)"
+                  class="input"
+                />
+                <svg class="arrow">
+                  <use xlink:href="img/icons/icons.svg#icon-bottom"></use>
+                </svg>
+              </div>
+              <div class="select-body">
+                <div class="select-item">Toyota</div>
+                <div class="select-item">Volkswagen</div>
+                <div class="select-item">Tesla</div>
+                <div class="select-item">LADA</div>
+                <div class="select-item">Haval</div>
+                <div class="select-item">Toyota</div>
+                <div class="select-item">Volkswagen</div>
+                <div class="select-item">Tesla</div>
+                <div class="select-item">LADA</div>
+                <div class="select-item">Haval</div>
+              </div>
+            </div>
+          </div>
+          <div class="s-calc__widget-bottom">
+            <div class="btn-s s-calc__widget-next widget-calc-next">Далее</div>
+          </div>
+        </div>
+        <div class="s-calc__widget-window widget-calc-window">
+          <div class="s-calc__widget-window-title">
+            Укажите модель автомобиля
+          </div>
+          <div class="s-calc__widget-control">
+            <div class="input-name">Введите вручную или выберите из списка</div>
+            <div class="select">
+              <div class="select-btn">
+                <input
+                  type="text"
+                  placeholder="Введите марку (например: Mazda)"
+                  class="input"
+                />
+                <svg class="arrow">
+                  <use xlink:href="img/icons/icons.svg#icon-bottom"></use>
+                </svg>
+              </div>
+              <div class="select-body">
+                <div class="select-item">Toyota</div>
+                <div class="select-item">Volkswagen</div>
+                <div class="select-item">Tesla</div>
+                <div class="select-item">LADA</div>
+                <div class="select-item">Haval</div>
+                <div class="select-item">Toyota</div>
+                <div class="select-item">Volkswagen</div>
+                <div class="select-item">Tesla</div>
+                <div class="select-item">LADA</div>
+                <div class="select-item">Haval</div>
+              </div>
+            </div>
+          </div>
+          <div class="s-calc__widget-bottom">
+            <div class="btn-s s-calc__widget-next widget-calc-next">Далее</div>
+          </div>
+        </div>
+        <div class="s-calc__widget-window widget-calc-window">
+          <div class="s-calc__widget-window-title">
+            Укажите масло автомобиля
+          </div>
+          <div class="s-calc__widget-control">
+            <div class="input-name">Введите вручную или выберите из списка</div>
+            <div class="select">
+              <div class="select-btn">
+                <input
+                  type="text"
+                  placeholder="Введите марку (например: Mazda)"
+                  class="input"
+                />
+                <svg class="arrow">
+                  <use xlink:href="img/icons/icons.svg#icon-bottom"></use>
+                </svg>
+              </div>
+              <div class="select-body">
+                <div class="select-item">Toyota</div>
+                <div class="select-item">Volkswagen</div>
+                <div class="select-item">Tesla</div>
+                <div class="select-item">LADA</div>
+                <div class="select-item">Haval</div>
+                <div class="select-item">Toyota</div>
+                <div class="select-item">Volkswagen</div>
+                <div class="select-item">Tesla</div>
+                <div class="select-item">LADA</div>
+                <div class="select-item">Haval</div>
+              </div>
+            </div>
+          </div>
+          <div class="s-calc__widget-bottom">
+            <div class="btn-s s-calc__widget-next widget-calc-next">Далее</div>
+          </div>
+        </div>
+        <div class="s-calc__widget-window widget-calc-window">
+          <div class="s-calc__widget-window-title">Заполните форму</div>
+          <form class="s-calc__form widget-calc-form">
+            <div style="display: none">
+              <textarea class="input-note"></textarea>
+            </div>
+            <div class="input-control">
+              <input type="text" placeholder="Ваше имя" class="input" />
+            </div>
+            <div class="input-control">
+              <input type="tel" placeholder="Ваш телефон" class="input" />
+            </div>
+            <div class="check-wrapper">
+              <span class="wpcf7-form-control-wrap" data-name="acceptance-278">
+                <span class="wpcf7-form-control wpcf7-acceptance">
+                  <span class="wpcf7-list-item">
+                    <label>
+                      <input
+                        type="checkbox"
+                        name="acceptance-278"
+                        value="1"
+                        aria-invalid="false"
+                      />
+                      <span class="wpcf7-list-item-label">
+                        <span>
+                          Я даю согласие на
+                          <a href="/privacy-policy" target="_blank">
+                            обработку персональных данных
+                          </a>
+                        </span>
+                      </span>
+                    </label>
+                  </span>
+                </span>
+              </span>
+            </div>
+            <button type="submit" class="btn-s">Оставить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="sect-p s-products bg-ghost" id="s-products">
+  <div class="container">
+    <div class="sect-head">
+      <h2 class="s-title">Моторное масло в наличии</h2>
+      <div class="slider-arrows">
+        <div class="slider-arrow _prev _primary _min">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#icon-prev"></use>
+          </svg>
+        </div>
+        <div class="slider-arrow _next _primary _min">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#icon-next"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="swiper s-products__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <article class="card-product">
+            <div class="card-product__gallery">
+              <img src="img/product.jpg" alt="image" />
+            </div>
+            <h3 class="card-product__title">
+              Синтетическое моторное масло Suprotec Atomium 5W-30 4л
+            </h3>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="card-product">
+            <div class="card-product__gallery">
+              <img src="img/product.jpg" alt="image" />
+            </div>
+            <h3 class="card-product__title">
+              Синтетическое моторное масло Suprotec Atomium 5W-30 4л
+            </h3>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="card-product">
+            <div class="card-product__gallery">
+              <img src="img/product.jpg" alt="image" />
+            </div>
+            <h3 class="card-product__title">
+              Синтетическое моторное масло Suprotec Atomium 5W-30 4л
+            </h3>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="card-product">
+            <div class="card-product__gallery">
+              <img src="img/product.jpg" alt="image" />
+            </div>
+            <h3 class="card-product__title">
+              Синтетическое моторное масло Suprotec Atomium 5W-30 4л
+            </h3>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="card-product">
+            <div class="card-product__gallery">
+              <img src="img/product.jpg" alt="image" />
+            </div>
+            <h3 class="card-product__title">
+              Синтетическое моторное масло Suprotec Atomium 5W-30 4л
+            </h3>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="card-product">
+            <div class="card-product__gallery">
+              <img src="img/product.jpg" alt="image" />
+            </div>
+            <h3 class="card-product__title">
+              Синтетическое моторное масло Suprotec Atomium 5W-30 4л
+            </h3>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="card-product">
+            <div class="card-product__gallery">
+              <img src="img/product.jpg" alt="image" />
+            </div>
+            <h3 class="card-product__title">
+              Синтетическое моторное масло Suprotec Atomium 5W-30 4л
+            </h3>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="slider-scrollbar"></div>
+  </div>
+</section>
+
+    <section
+  class="sect-p s-brands"
+  id="s-brands"
+  style="background: url(&quot;img/brands.jpg&quot;) 0 0 / cover no-repeat"
+>
+  <div class="container">
+    <div class="s-brands__head">
+      <h2 class="m-title s-brands__title">
+        Выберите свою марку и Узнайте стоимость
+      </h2>
+      <div class="s-brands__head-descr b-text">
+        замены масла в двигатель на ваш автомобиль
+      </div>
+    </div>
+    <div data-count-show="100" class="container-more">
+      <div class="s-brands__grid">
+        <div data-more-item>
+          <a
+            href="#modal-offer"
+            data-brand="Lada"
+            data-btn-note="Замена масла: Lada"
+            data-target-note="#modal-offer .input-note"
+            class="s-brands__item"
+            data-price="520 ₽"
+            data-fancybox
+          >
+            <div class="gallery-rect">
+              <img src="img/lada.png" alt="logo" />
+            </div>
+            <span>LADA</span>
+          </a>
+        </div>
+        <div data-more-item>
+          <a
+            href="#modal-offer"
+            data-brand="Tayota"
+            data-btn-note="Замена масла: Toyota"
+            data-target-note="#modal-offer .input-note"
+            class="s-brands__item"
+            data-price="1220 ₽"
+            data-fancybox
+          >
+            <div class="gallery-rect">
+              <img src="img/tayota.png" alt="logo" />
+            </div>
+            <span>Tayota</span>
+          </a>
+        </div>
+        <div data-more-item>
+          <a
+            href="#modal-offer"
+            data-brand="Lada"
+            data-btn-note="Замена масла: Lada"
+            data-target-note="#modal-offer .input-note"
+            class="s-brands__item"
+            data-price="520 ₽"
+            data-fancybox
+          >
+            <div class="gallery-rect">
+              <img src="img/lada.png" alt="logo" />
+            </div>
+            <span>LADA</span>
+          </a>
+        </div>
+        <div data-more-item>
+          <a
+            href="#modal-offer"
+            data-brand="Tayota"
+            data-btn-note="Замена масла: Toyota"
+            data-target-note="#modal-offer .input-note"
+            class="s-brands__item"
+            data-price="1220 ₽"
+            data-fancybox
+          >
+            <div class="gallery-rect">
+              <img src="img/tayota.png" alt="logo" />
+            </div>
+            <span>Tayota</span>
+          </a>
+        </div>
+        <div data-more-item>
+          <a
+            href="#modal-offer"
+            data-brand="Lada"
+            data-btn-note="Замена масла: Lada"
+            data-target-note="#modal-offer .input-note"
+            class="s-brands__item"
+            data-price="520 ₽"
+            data-fancybox
+          >
+            <div class="gallery-rect">
+              <img src="img/lada.png" alt="logo" />
+            </div>
+            <span>LADA</span>
+          </a>
+        </div>
+        <div data-more-item>
+          <a
+            href="#modal-offer"
+            data-brand="Tayota"
+            data-btn-note="Замена масла: Toyota"
+            data-target-note="#modal-offer .input-note"
+            class="s-brands__item"
+            data-price="1220 ₽"
+            data-fancybox
+          >
+            <div class="gallery-rect">
+              <img src="img/tayota.png" alt="logo" />
+            </div>
+            <span>Tayota</span>
+          </a>
+        </div>
+        <div data-more-item>
+          <a
+            href="#modal-offer"
+            data-brand="Lada"
+            data-btn-note="Замена масла: Lada"
+            data-target-note="#modal-offer .input-note"
+            class="s-brands__item"
+            data-price="520 ₽"
+            data-fancybox
+          >
+            <div class="gallery-rect">
+              <img src="img/lada.png" alt="logo" />
+            </div>
+            <span>LADA</span>
+          </a>
+        </div>
+        <div data-more-item>
+          <a
+            href="#modal-offer"
+            data-brand="Tayota"
+            data-btn-note="Замена масла: Toyota"
+            data-target-note="#modal-offer .input-note"
+            class="s-brands__item"
+            data-price="1220 ₽"
+            data-fancybox
+          >
+            <div class="gallery-rect">
+              <img src="img/tayota.png" alt="logo" />
+            </div>
+            <span>Tayota</span>
+          </a>
+        </div>
+        <div data-more-item>
+          <a
+            href="#modal-offer"
+            data-brand="Lada"
+            data-btn-note="Замена масла: Lada"
+            data-target-note="#modal-offer .input-note"
+            class="s-brands__item"
+            data-price="520 ₽"
+            data-fancybox
+          >
+            <div class="gallery-rect">
+              <img src="img/lada.png" alt="logo" />
+            </div>
+            <span>LADA</span>
+          </a>
+        </div>
+        <div data-more-item>
+          <a
+            href="#modal-offer"
+            data-brand="Tayota"
+            data-btn-note="Замена масла: Toyota"
+            data-target-note="#modal-offer .input-note"
+            class="s-brands__item"
+            data-price="1220 ₽"
+            data-fancybox
+          >
+            <div class="gallery-rect">
+              <img src="img/tayota.png" alt="logo" />
+            </div>
+            <span>Tayota</span>
+          </a>
+        </div>
+        <div data-more-item>
+          <a
+            href="#modal-offer"
+            data-brand="Lada"
+            data-btn-note="Замена масла: Lada"
+            data-target-note="#modal-offer .input-note"
+            class="s-brands__item"
+            data-price="520 ₽"
+            data-fancybox
+          >
+            <div class="gallery-rect">
+              <img src="img/lada.png" alt="logo" />
+            </div>
+            <span>LADA</span>
+          </a>
+        </div>
+        <div data-more-item>
+          <a
+            href="#modal-offer"
+            data-brand="Tayota"
+            data-btn-note="Замена масла: Toyota"
+            data-target-note="#modal-offer .input-note"
+            class="s-brands__item"
+            data-price="1220 ₽"
+            data-fancybox
+          >
+            <div class="gallery-rect">
+              <img src="img/tayota.png" alt="logo" />
+            </div>
+            <span>Tayota</span>
+          </a>
+        </div>
+        <div data-more-item>
+          <a
+            href="#modal-offer"
+            data-brand="Lada"
+            data-btn-note="Замена масла: Lada"
+            data-target-note="#modal-offer .input-note"
+            class="s-brands__item"
+            data-price="520 ₽"
+            data-fancybox
+          >
+            <div class="gallery-rect">
+              <img src="img/lada.png" alt="logo" />
+            </div>
+            <span>LADA</span>
+          </a>
+        </div>
+        <div data-more-item>
+          <a
+            href="#modal-offer"
+            data-brand="Tayota"
+            data-btn-note="Замена масла: Toyota"
+            data-target-note="#modal-offer .input-note"
+            class="s-brands__item"
+            data-price="1220 ₽"
+            data-fancybox
+          >
+            <div class="gallery-rect">
+              <img src="img/tayota.png" alt="logo" />
+            </div>
+            <span>Tayota</span>
+          </a>
+        </div>
+        <div data-more-item>
+          <a
+            href="#modal-offer"
+            data-brand="Lada"
+            data-btn-note="Замена масла: Lada"
+            data-target-note="#modal-offer .input-note"
+            class="s-brands__item"
+            data-price="520 ₽"
+            data-fancybox
+          >
+            <div class="gallery-rect">
+              <img src="img/lada.png" alt="logo" />
+            </div>
+            <span>LADA</span>
+          </a>
+        </div>
+        <div data-more-item>
+          <a
+            href="#modal-offer"
+            data-brand="Tayota"
+            data-btn-note="Замена масла: Toyota"
+            data-target-note="#modal-offer .input-note"
+            class="s-brands__item"
+            data-price="1220 ₽"
+            data-fancybox
+          >
+            <div class="gallery-rect">
+              <img src="img/tayota.png" alt="logo" />
+            </div>
+            <span>Tayota</span>
+          </a>
+        </div>
+        <div data-more-item>
+          <a
+            href="#modal-offer"
+            data-brand="Lada"
+            data-btn-note="Замена масла: Lada"
+            data-target-note="#modal-offer .input-note"
+            class="s-brands__item"
+            data-price="520 ₽"
+            data-fancybox
+          >
+            <div class="gallery-rect">
+              <img src="img/lada.png" alt="logo" />
+            </div>
+            <span>LADA</span>
+          </a>
+        </div>
+        <div data-more-item>
+          <a
+            href="#modal-offer"
+            data-brand="Tayota"
+            data-btn-note="Замена масла: Toyota"
+            data-target-note="#modal-offer .input-note"
+            class="s-brands__item"
+            data-price="1220 ₽"
+            data-fancybox
+          >
+            <div class="gallery-rect">
+              <img src="img/tayota.png" alt="logo" />
+            </div>
+            <span>Tayota</span>
+          </a>
+        </div>
+        <div data-more-item>
+          <a
+            href="#modal-offer"
+            data-brand="Lada"
+            data-btn-note="Замена масла: Lada"
+            data-target-note="#modal-offer .input-note"
+            class="s-brands__item"
+            data-price="520 ₽"
+            data-fancybox
+          >
+            <div class="gallery-rect">
+              <img src="img/lada.png" alt="logo" />
+            </div>
+            <span>LADA</span>
+          </a>
+        </div>
+        <div data-more-item>
+          <a
+            href="#modal-offer"
+            data-brand="Tayota"
+            data-btn-note="Замена масла: Toyota"
+            data-target-note="#modal-offer .input-note"
+            class="s-brands__item"
+            data-price="1220 ₽"
+            data-fancybox
+          >
+            <div class="gallery-rect">
+              <img src="img/tayota.png" alt="logo" />
+            </div>
+            <span>Tayota</span>
+          </a>
+        </div>
+        <div data-more-item>
+          <a
+            href="#modal-offer"
+            data-brand="Lada"
+            data-btn-note="Замена масла: Lada"
+            data-target-note="#modal-offer .input-note"
+            class="s-brands__item"
+            data-price="520 ₽"
+            data-fancybox
+          >
+            <div class="gallery-rect">
+              <img src="img/lada.png" alt="logo" />
+            </div>
+            <span>LADA</span>
+          </a>
+        </div>
+        <div data-more-item>
+          <a
+            href="#modal-offer"
+            data-brand="Tayota"
+            data-btn-note="Замена масла: Toyota"
+            data-target-note="#modal-offer .input-note"
+            class="s-brands__item"
+            data-price="1220 ₽"
+            data-fancybox
+          >
+            <div class="gallery-rect">
+              <img src="img/tayota.png" alt="logo" />
+            </div>
+            <span>Tayota</span>
+          </a>
+        </div>
+        <div data-more-item>
+          <a
+            href="#modal-offer"
+            data-brand="Lada"
+            data-btn-note="Замена масла: Lada"
+            data-target-note="#modal-offer .input-note"
+            class="s-brands__item"
+            data-price="520 ₽"
+            data-fancybox
+          >
+            <div class="gallery-rect">
+              <img src="img/lada.png" alt="logo" />
+            </div>
+            <span>LADA</span>
+          </a>
+        </div>
+        <div data-more-item>
+          <a
+            href="#modal-offer"
+            data-brand="Tayota"
+            data-btn-note="Замена масла: Toyota"
+            data-target-note="#modal-offer .input-note"
+            class="s-brands__item"
+            data-price="1220 ₽"
+            data-fancybox
+          >
+            <div class="gallery-rect">
+              <img src="img/tayota.png" alt="logo" />
+            </div>
+            <span>Tayota</span>
+          </a>
+        </div>
+        <div data-more-item>
+          <a
+            href="#modal-offer"
+            data-brand="Lada"
+            data-btn-note="Замена масла: Lada"
+            data-target-note="#modal-offer .input-note"
+            class="s-brands__item"
+            data-price="520 ₽"
+            data-fancybox
+          >
+            <div class="gallery-rect">
+              <img src="img/lada.png" alt="logo" />
+            </div>
+            <span>LADA</span>
+          </a>
+        </div>
+        <div data-more-item>
+          <a
+            href="#modal-offer"
+            data-brand="Tayota"
+            data-btn-note="Замена масла: Toyota"
+            data-target-note="#modal-offer .input-note"
+            class="s-brands__item"
+            data-price="1220 ₽"
+            data-fancybox
+          >
+            <div class="gallery-rect">
+              <img src="img/tayota.png" alt="logo" />
+            </div>
+            <span>Tayota</span>
+          </a>
+        </div>
+      </div>
+      <div data-more-btn class="btn-s s-brands__more-btn">
+        <span>Показать ещё</span>
+        <svg class="arrow">
+          <use xlink:href='img/icons/icons.svg#icon-bottom'></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="s-prices sect-p bg-ghost" id="s-prices">
+  <div class="container">
+    <div class="sect-head">
+      <h2 class="s-title">Актуальный прайс-лист</h2>
+    </div>
+    <table class="s-prices__table">
+      <thead>
+        <tr>
+          <th>Наименование услуги</th>
+          <th>Стоимость</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Замена масла в ДВС</td>
+          <td>от 2500 руб.</td>
+        </tr>
+        <tr>
+          <td>Замена масла в ДВС</td>
+          <td>от 2500 руб.</td>
+        </tr>
+        <tr>
+          <td>Замена масла в ДВС</td>
+          <td>от 2500 руб.</td>
+        </tr>
+        <tr>
+          <td>Замена масла в ДВС</td>
+          <td>от 2500 руб.</td>
+        </tr>
+        <tr>
+          <td>Замена масла в ДВС</td>
+          <td>от 2500 руб.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+    <section class="sect-p s-connect" id="s-connect">
+  <img src="img/decor-left.png" alt="image" class="s-connect__decor _left">
+  <img src="img/decor-right.png" alt="image" class="s-connect__decor _right">
+
+  <div class="container">
+    <img src="img/connect-img.png" alt="image" class="s-connect__img">
+    <div class="s-connect__info">
+      <h2 class="m-title s-connect__title">оставьте заявку</h2>
+      <div class="b-text s-connect__descr">
+        на экспрес замену масла в двигателе в “Центре масла” на Космонавтов, 46Б
+      </div>
+      <form class="s-connect__form">
+        <div class="form-grid">
+          <div class="input-control">
+            <input type="text" placeholder="Ваше имя" class="input" />
+          </div>
+          <div class="input-control">
+            <input type="tel" placeholder="Ваш телефон" class="input" />
+          </div>
+          <div class="form-nav">
+            <button type="submit" class="btn-s">Оставить заявку</button>
+            <div class="check-wrapper">
+              <span class="wpcf7-form-control-wrap" data-name="acceptance-278">
+                <span class="wpcf7-form-control wpcf7-acceptance">
+                  <span class="wpcf7-list-item">
+                    <label>
+                      <input
+                        type="checkbox"
+                        name="acceptance-278"
+                        value="1"
+                        aria-invalid="false"
+                      />
+                      <span class="wpcf7-list-item-label">
+                        <span>
+                          Я даю согласие на
+                          <a href="/privacy-policy" target="_blank">
+                            обработку персональных данных
+                          </a>
+                        </span>
+                      </span>
+                    </label>
+                  </span>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+    <section class="sect-p bg-ghost s-faq" id="s-faq">
+  <div class="container">
+    <div class="sect-head">
+      <h2 class="s-title">Часто задаваемые вопросы</h2>
+    </div>
+    <div data-spollers class="s-faq__grid">
+      <div class="s-faq__col">
+        <div class="s-faq__spoller">
+          <div data-spoller class="s-faq__spoller-btn">
+            <span>Как уже неоднократно упомянуто</span>
+            <svg class="arrow">
+              <use xlink:href="img/icons/icons.svg#icon-bottom"></use>
+            </svg>
+          </div>
+          <div>
+            <div class="s-faq__spoller-body">
+              <div class="content-box">
+                <p>
+                  Значимость этих проблем настолько очевидна, что постоянное
+                  информационно-пропагандистское обеспечение нашей деятельности
+                  способствует повышению качества глубокомысленных рассуждений.
+                  Наше дело не так однозначно, как может показаться: реализация
+                  намеченных плановых заданий предполагает независимые
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="s-faq__spoller">
+          <div data-spoller class="s-faq__spoller-btn">
+            <span>Как уже неоднократно упомянуто</span>
+            <svg class="arrow">
+              <use xlink:href="img/icons/icons.svg#icon-bottom"></use>
+            </svg>
+          </div>
+          <div>
+            <div class="s-faq__spoller-body">
+              <div class="content-box">
+                <p>
+                  Значимость этих проблем настолько очевидна, что постоянное
+                  информационно-пропагандистское обеспечение нашей деятельности
+                  способствует повышению качества глубокомысленных рассуждений.
+                  Наше дело не так однозначно, как может показаться: реализация
+                  намеченных плановых заданий предполагает независимые
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="s-faq__spoller">
+          <div data-spoller class="s-faq__spoller-btn">
+            <span>Как уже неоднократно упомянуто</span>
+            <svg class="arrow">
+              <use xlink:href="img/icons/icons.svg#icon-bottom"></use>
+            </svg>
+          </div>
+          <div>
+            <div class="s-faq__spoller-body">
+              <div class="content-box">
+                <p>
+                  Значимость этих проблем настолько очевидна, что постоянное
+                  информационно-пропагандистское обеспечение нашей деятельности
+                  способствует повышению качества глубокомысленных рассуждений.
+                  Наше дело не так однозначно, как может показаться: реализация
+                  намеченных плановых заданий предполагает независимые
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="s-faq__spoller">
+          <div data-spoller class="s-faq__spoller-btn">
+            <span>Как уже неоднократно упомянуто</span>
+            <svg class="arrow">
+              <use xlink:href="img/icons/icons.svg#icon-bottom"></use>
+            </svg>
+          </div>
+          <div>
+            <div class="s-faq__spoller-body">
+              <div class="content-box">
+                <p>
+                  Значимость этих проблем настолько очевидна, что постоянное
+                  информационно-пропагандистское обеспечение нашей деятельности
+                  способствует повышению качества глубокомысленных рассуждений.
+                  Наше дело не так однозначно, как может показаться: реализация
+                  намеченных плановых заданий предполагает независимые
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="s-faq__spoller">
+          <div data-spoller class="s-faq__spoller-btn">
+            <span>Как уже неоднократно упомянуто</span>
+            <svg class="arrow">
+              <use xlink:href="img/icons/icons.svg#icon-bottom"></use>
+            </svg>
+          </div>
+          <div>
+            <div class="s-faq__spoller-body">
+              <div class="content-box">
+                <p>
+                  Значимость этих проблем настолько очевидна, что постоянное
+                  информационно-пропагандистское обеспечение нашей деятельности
+                  способствует повышению качества глубокомысленных рассуждений.
+                  Наше дело не так однозначно, как может показаться: реализация
+                  намеченных плановых заданий предполагает независимые
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="s-faq__col">
+        <div class="s-faq__spoller">
+          <div data-spoller class="s-faq__spoller-btn">
+            <span>Как уже неоднократно упомянуто</span>
+            <svg class="arrow">
+              <use xlink:href="img/icons/icons.svg#icon-bottom"></use>
+            </svg>
+          </div>
+          <div>
+            <div class="s-faq__spoller-body">
+              <div class="content-box">
+                <p>
+                  Значимость этих проблем настолько очевидна, что постоянное
+                  информационно-пропагандистское обеспечение нашей деятельности
+                  способствует повышению качества глубокомысленных рассуждений.
+                  Наше дело не так однозначно, как может показаться: реализация
+                  намеченных плановых заданий предполагает независимые
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="s-faq__spoller">
+          <div data-spoller class="s-faq__spoller-btn">
+            <span>Как уже неоднократно упомянуто</span>
+            <svg class="arrow">
+              <use xlink:href="img/icons/icons.svg#icon-bottom"></use>
+            </svg>
+          </div>
+          <div>
+            <div class="s-faq__spoller-body">
+              <div class="content-box">
+                <p>
+                  Значимость этих проблем настолько очевидна, что постоянное
+                  информационно-пропагандистское обеспечение нашей деятельности
+                  способствует повышению качества глубокомысленных рассуждений.
+                  Наше дело не так однозначно, как может показаться: реализация
+                  намеченных плановых заданий предполагает независимые
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="s-faq__spoller">
+          <div data-spoller class="s-faq__spoller-btn">
+            <span>Как уже неоднократно упомянуто</span>
+            <svg class="arrow">
+              <use xlink:href="img/icons/icons.svg#icon-bottom"></use>
+            </svg>
+          </div>
+          <div>
+            <div class="s-faq__spoller-body">
+              <div class="content-box">
+                <p>
+                  Значимость этих проблем настолько очевидна, что постоянное
+                  информационно-пропагандистское обеспечение нашей деятельности
+                  способствует повышению качества глубокомысленных рассуждений.
+                  Наше дело не так однозначно, как может показаться: реализация
+                  намеченных плановых заданий предполагает независимые
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="s-faq__spoller">
+          <div data-spoller class="s-faq__spoller-btn">
+            <span>Как уже неоднократно упомянуто</span>
+            <svg class="arrow">
+              <use xlink:href="img/icons/icons.svg#icon-bottom"></use>
+            </svg>
+          </div>
+          <div>
+            <div class="s-faq__spoller-body">
+              <div class="content-box">
+                <p>
+                  Значимость этих проблем настолько очевидна, что постоянное
+                  информационно-пропагандистское обеспечение нашей деятельности
+                  способствует повышению качества глубокомысленных рассуждений.
+                  Наше дело не так однозначно, как может показаться: реализация
+                  намеченных плановых заданий предполагает независимые
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="s-faq__spoller">
+          <div data-spoller class="s-faq__spoller-btn">
+            <span>Как уже неоднократно упомянуто</span>
+            <svg class="arrow">
+              <use xlink:href="img/icons/icons.svg#icon-bottom"></use>
+            </svg>
+          </div>
+          <div>
+            <div class="s-faq__spoller-body">
+              <div class="content-box">
+                <p>
+                  Значимость этих проблем настолько очевидна, что постоянное
+                  информационно-пропагандистское обеспечение нашей деятельности
+                  способствует повышению качества глубокомысленных рассуждений.
+                  Наше дело не так однозначно, как может показаться: реализация
+                  намеченных плановых заданий предполагает независимые
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="sect-p bg-ghost s-gallery" id="s-gallery">
+  <div class="container">
+    <div class="sect-head">
+      <h2 class="s-title">наш тех центр</h2>
+      <div class="slider-arrows">
+        <div class="slider-arrow _prev _primary _min">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#icon-prev"></use>
+          </svg>
+        </div>
+        <div class="slider-arrow _next _primary _min">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#icon-next"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="swiper s-gallery__slider">
+      <div class="swiper-wrapper">
+        <a href="img/gallery.jpg" data-fancybox="gallery" class="swiper-slide s-gallery__slide">
+          <img src="img/gallery.jpg" alt="image">
+        </a>
+        <a href="img/gallery.jpg" data-fancybox="gallery" class="swiper-slide s-gallery__slide">
+          <img src="img/gallery.jpg" alt="image">
+        </a>
+        <a href="img/gallery.jpg" data-fancybox="gallery" class="swiper-slide s-gallery__slide">
+          <img src="img/gallery.jpg" alt="image">
+        </a>
+        <a href="img/gallery.jpg" data-fancybox="gallery" class="swiper-slide s-gallery__slide">
+          <img src="img/gallery.jpg" alt="image">
+        </a>
+        <a href="img/gallery.jpg" data-fancybox="gallery" class="swiper-slide s-gallery__slide">
+          <img src="img/gallery.jpg" alt="image">
+        </a>
+        <a href="img/gallery.jpg" data-fancybox="gallery" class="swiper-slide s-gallery__slide">
+          <img src="img/gallery.jpg" alt="image">
+        </a>
+        <a href="img/gallery.jpg" data-fancybox="gallery" class="swiper-slide s-gallery__slide">
+          <img src="img/gallery.jpg" alt="image">
+        </a>
+        <a href="img/gallery.jpg" data-fancybox="gallery" class="swiper-slide s-gallery__slide">
+          <img src="img/gallery.jpg" alt="image">
+        </a>
+        <a href="img/gallery.jpg" data-fancybox="gallery" class="swiper-slide s-gallery__slide">
+          <img src="img/gallery.jpg" alt="image">
+        </a>
+      </div>
+    </div>
+    <div class="slider-scrollbar"></div>
+  </div>
+</section>
+
+    <section class="s-contacts sect-p bg-ghost" id="s-contacts">
+  <div class="container">
+    <div class="sect-head">
+      <h2 class="s-title">контакты</h2>
+    </div>
+    <div class="s-contacts__wrapper">
+      <div class="s-contacts__info">
+        <img src="img/logo-white.svg" alt="logo" class="s-contacts__logo" />
+        <a href="tel:+79999999999" class="s-contacts__tel">
+          +7 (999) 999‒99‒99
+        </a>
+        <div class="s-contacts__item">
+          <strong>Адрес:</strong>
+          <br />
+          г. Казань, ул. Космонавтов, 46Б
+        </div>
+        <div class="s-contacts__item">
+          <strong>Режим работы:</strong>
+          <br />
+          пн-вс: с 09:00 до 19:00
+        </div>
+        <a
+          href="#modal-feedback"
+          data-fancybox
+          class="btn-s _white s-contacts__btn"
+        >
+          Записаться онлайн
+        </a>
+      </div>
+      <div
+        data-center="[55.794067068955925,49.20000049999998]"
+        data-zoom="17"
+        class="map s-contacts__map"
+      ></div>
+    </div>
+  </div>
+</section>
+
+    
+  </main>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <a href="/" class="footer__logo">
+        <img src="img/logo.svg" alt="logo" />
+      </a>
+      <div class="footer__nav">
+        <div class="nav-title">Навигация</div>
+        <ul class="list footer__nav-list">
+          <li><a href="#s-products">Виды масла</a></li>
+          <li><a href="#s-prices">Прайс-лист</a></li>
+          <li><a href="#s-calc">Калькулятор</a></li>
+          <li><a href="#s-faq">FAQ</a></li>
+          <li><a href="#s-contacts">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__contacts">
+        <a href="tel:+79999999999" class="footer__tel">+7 (999) 999‒99‒99</a>
+        <div class="footer__address">г. Казань, ул. Космонавтов, 46Б</div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__copyright">
+        © 2025 ”Центр масла”, ИНН: 123123123123, ОГРН: 123123123123123
+      </div>
+      <ul class="list footer__bottom-list">
+        <li>
+          <a href="#" target="_blank">Правила обработки персональных данных</a>
+        </li>
+        <li><a href="#" target="_blank">Политика конфиденциальности</a></li>
+        <li>
+          <a href="https://qorix.ru/" target="_blank">
+            <span>Разработка сайта —</span>
+            <img src="img/qroix.svg" alt="qorix" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="./files/swiper/swiper.min.js"></script>
+<script src="./files/fancybox/fancybox.min.js"></script>
+<script src="./files/inputmask/inputmask.min.js"></script>
+
+  
+  <script src="./js/app.js?ver=mqtejbtc"></script>
+</body>
+</html>

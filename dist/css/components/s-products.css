@@ -1,0 +1,28 @@
+.s-products__slider {
+  width: calc(100% - 40px);
+}
+
+.s-products__slider .swiper-slide {
+  box-sizing: border-box;
+}
+
+@media (max-width: 1365px) {
+  .s-products__slider {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .s-products {
+    overflow: hidden;
+  }
+
+  .s-products__slider {
+    overflow: visible !important;
+  }
+
+  .s-products__slider .swiper-slide {
+    width: 230px !important;
+    max-width: 100%;
+  }
+}

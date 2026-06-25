@@ -1,0 +1,113 @@
+.input-control {
+  width: 100%;
+}
+
+.input {
+  --background: transparent;
+  --border: var(--gray-d);
+  --color-placeholder: var(--gray);
+  --color: black;
+  --background-h: transparent;
+  --border-h: var(--primary);
+  border: 1px solid var(--border);
+  background-color: var(--background);
+  outline: none;
+  padding: 15px 25px;
+  width: 100%;
+  color: var(--color);
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.input::placeholder {
+  color: var(--color-placeholder);
+}
+
+.input:focus {
+  border-color: var(--border-h);
+  background-color: var(--background-h);
+}
+
+.input._white {
+  --background: white;
+  --background-h: white;
+}
+
+.input.wpcf7-not-valid,
+.input._not-valid {
+  --border: var(--red);
+  --color-placeholder: var(--red);
+}
+
+.check-wrapper {
+  position: relative;
+  width: fit-content;
+  --url: url("../img/check-primary.svg");
+  --border: var(--gray-d);
+  --border-h: var(--primary);
+  --background: transparent;
+  --background-h: transparent;
+  --color: var(--dark);
+}
+
+.check-wrapper._white {
+  --color: white;
+  --url: url("../img/check-white.svg");
+  --border: white;
+  --border-h: white;
+}
+
+.check-wrapper input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+}
+
+.check-wrapper input[type=checkbox]:checked + .wpcf7-list-item-label::before {
+  border-color: var(--border-h);
+  background: var(--url) center/12px auto no-repeat;
+  background-color: var(--background-h);
+}
+
+.check-wrapper .wpcf7-list-item {
+  margin: 0;
+}
+
+.check-wrapper .wpcf7-list-item-label {
+  display: flex;
+  align-items: start;
+  gap: 15px;
+  cursor: pointer;
+  width: fit-content;
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--color);
+}
+
+.check-wrapper .wpcf7-list-item-label a {
+  color: var(--primary);
+}
+
+.check-wrapper .wpcf7-list-item-label::before {
+  display: block;
+  content: "";
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--border);
+  background-color: var(--background);
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+@media (any-hover: hover) {
+  .check-wrapper .wpcf7-list-item-label a:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (hover: none) {
+  .check-wrapper .wpcf7-list-item-label a:active {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,47 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.s-prices {
+  &__table {
+    background-color: white;
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    display: block;
+
+    thead {
+      display: block;
+      width: 100%;
+      color: white;
+      background-color: var(--primary);
+    }
+    tbody {
+      display: block;
+      width: 100%;
+    }
+    tr {
+      @include flex-between;
+      padding: 20px 35px;
+      width: 100%;
+      border-top: 1px solid var(--gray-d);
+      @include tablet {
+        padding: 16px 20px;
+      }
+    }
+    th,
+    td {
+      font-weight: 400;
+      text-align: start;
+      font-size: 18px;
+      line-height: 113%;
+      display: block;
+
+      @include tablet {
+        font-size: 16px;
+      }
+
+      &:last-child {
+        flex-shrink: 0;
+      }
+    }
+  }
+}
