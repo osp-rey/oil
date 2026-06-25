@@ -7,6 +7,10 @@
   &.bg-ghost + .sect-p.bg-ghost {
     padding-top: 0 !important;
   }
+
+  @include laptop-min {
+    scroll-margin-top: 80px;
+  }
 }
 
 .bg-ghost {
